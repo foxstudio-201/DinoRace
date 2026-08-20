@@ -96,7 +96,6 @@ public class RaceDetailScreen extends Screen {
     private int tab = 0;
     private int scrollStats = 0;
     private int scrollSkills = 0;
-    private boolean debugShown = false;
 
     private double zoom = 1.0;
     private double panX = 0;
@@ -110,7 +109,6 @@ public class RaceDetailScreen extends Screen {
         this.raceKey = RaceData.key(raceIndex);
         this.cfg = RaceDetailConfig.get(raceKey);
         lastRaceIndex = raceIndex;
-        debugShown = false;
         if (this.cfg.raceName.isEmpty()) {
             this.cfg.raceName = RaceData.NAMES[raceIndex];
         }
@@ -332,33 +330,6 @@ public class RaceDetailScreen extends Screen {
         if (skills.isEmpty()) {
             String msg = "Không có kỹ năng khả dụng.";
             g.drawString(this.font, msg, cx + (cw - this.font.width(msg)) / 2, top + 12, 0xFF3B3B3B, false);
-            int totalAct = 0;
-            int matchedAct = 0;
-            for (org.foxstudio.dinorace.race.RaceInfo ri : RaceClientData.racesList()) {
-                for (org.foxstudio.dinorace.race.RacePower p : ri.powers) {
-                    if (p.active) {
-                        totalAct++;
-                        if (ri.key != null && ri.key.equalsIgnoreCase(raceKey)) {
-                            matchedAct++;
-                        }
-                    }
-                }
-            }
-            String dbg = "[DBG38] fileSkills=" + cfg.skills.size()
-                    + " raceList=" + RaceClientData.racesList().size()
-                    + " actInList=" + totalAct
-                    + " matchAct=" + matchedAct
-                    + " key=" + raceKey
-                    + " lv=" + RaceClientData.level();
-            g.drawString(this.font, dbg, cx + 8, top + 26, 0xFF555555, false);
-            org.slf4j.LoggerFactory.getLogger("dinorace").info("[dinorace] " + dbg);
-            if (!debugShown) {
-                debugShown = true;
-                if (net.minecraft.client.Minecraft.getInstance().player != null) {
-                    net.minecraft.client.Minecraft.getInstance().player.displayClientMessage(
-                            net.minecraft.network.chat.Component.literal(dbg), false);
-                }
-            }
             g.disableScissor();
             return;
         }
