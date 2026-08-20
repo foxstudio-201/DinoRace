@@ -1,0 +1,633 @@
+{
+  "races": [
+    {
+      "key": "dwarf",
+      "origin": "medievalorigins:dwarf",
+      "name": "Người Lùn",
+      "description": "-§l Tổng Quan§r: \n§o§2+ Khai Thác, Hang Động§r\n§o§6• Thấp: 102cm§r\n§o§c- Nhạy Cảm Ánh Sáng\n- Không Biết Bơi§r\n§lNgười Lùn§r là những người thực tế, chắc nịch và kiêu hãnh. Họ giỏi khai thác và sống dưới lòng đất, nhưng gặp khó khăn với ánh sáng ban ngày. Đá và đá, anh bạn.",
+      "powers": [
+        {
+          "name": "Công Nghệ Người Lùn",
+          "description": "Người lùn có thể khai thác đá mà không cần cuốc, và khai thác mọi thứ nhanh hơn những người khác.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Thấp Lùn",
+          "description": "Người lùn đủ thấp để chui vừa vào một đường hầm cao 1 mét (và gần như rộng bằng một mét).",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Mắt Ban Đêm",
+          "description": "Người lùn có thể tập trung để nhìn rõ mà không cần bất kỳ nguồn sáng nào.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Cư Dân Bóng Tối",
+          "description": "Ánh nắng trực tiếp sẽ đốt cháy mắt người lùn, làm chúng mù tạm thời. Có thể ngăn ngừa bằng phù phép hoặc mũ vàng.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Đặc Chắc",
+          "description": "Người lùn cực kỳ nặng so với kích thước; họ chìm nhanh trong nước.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Rượu Mạnh",
+          "description": "Người lùn nổi tiếng với đồ uống mạnh có thể hạ gục một người lớn gấp đôi họ. Kích hoạt để uống một ngụm và hồi phục hoàn toàn sức khỏe.",
+          "active": true,
+          "requiredLevel": 5
+        },
+        {
+          "name": "Cộng Hưởng Mythril",
+          "description": "Các kim loại mạnh mẽ mang linh hồn của người dân bạn tràn đầy sức mạnh cho bạn.",
+          "active": false,
+          "requiredLevel": 0
+        }
+      ],
+      "color": "#D4AF37"
+    },
+    {
+      "key": "elf",
+      "origin": "medievalorigins:high_elf",
+      "name": "Yêu Tinh Cao Cấp",
+      "description": "-§l Tổng Quan§r: \n§o§2+ Phép Thuật, Năng Lực Độc Đáo§r\n§o§c- Sát Thương Vật Lý\n- Phòng Thủ§r\n§lYêu Tinh Cao Cấp§r nổi tiếng kiêu ngạo, nhưng không thể phủ nhận tài năng; ma thuật nguyên tố chảy mạnh mẽ trong huyết quản của họ, mặc dù họ yếu hơn với vũ khí.",
+      "powers": [
+        {
+          "name": "Rút Tinh Chất",
+          "description": "Bằng cách giữ các vật phẩm khác nhau, yêu tinh cao cấp có thể truyền năng lượng của vật thể để giải phóng các loại ma thuật khác nhau. Di chuột qua mỗi ô để xem chi tiết.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Cảm Thông Huyền Bí",
+          "description": "Yêu Tinh Cao Cấp là những người thao túng năng lượng huyền bí mạnh mẽ và thông minh - chúng gây nhiều sát thương ma thuật hơn và chịu ít sát thương ma thuật hơn các chủng tộc khác.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Mỏng Manh",
+          "description": "Một Yêu Tinh Cao Cấp không được xây dựng để chiến đấu tay đôi. Chúng dễ bị tổn thương hơn nhiều trước sát thương vật lý và có ít máu hơn.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Cao Quý",
+          "description": "Yêu Tinh Cao Cấp tự nhiên có nhiều mana hơn các chủng tộc khác, và có thể truyền sức mạnh của tổ tiên để hồi mana nhanh chóng.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Cao Lớn",
+          "description": "Yêu Tinh Cao Cấp mảnh khảnh và cao hơn một chút so với người thường.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Thanh Lịch",
+          "description": "Yêu Tinh Cao Cấp bị làm chậm khi mặc áo giáp nặng (Có thể ngăn ngừa bằng phù phép), và có ít máu hơn.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Hơi Thở Băng Giá",
+          "description": "Phun ra luồng hơi băng giá đóng băng kẻ địch trước mặt.",
+          "active": true,
+          "requiredLevel": 10
+        },
+        {
+          "name": "Hơi Thở Lửa",
+          "description": "Phun ra luồng lửa thiêu đốt kẻ địch trước mặt.",
+          "active": true,
+          "requiredLevel": 10
+        },
+        {
+          "name": "Hơi Thở Lửa Yếu",
+          "description": "Phun luồng lửa yếu hơn, kèm theo khả năng hồi phục.",
+          "active": true,
+          "requiredLevel": 10
+        },
+        {
+          "name": "Dịch Chuyển Bóng Tối",
+          "description": "Dịch chuyển tức thời tới nơi đang nhìn, rời khỏi hiểm nguy.",
+          "active": true,
+          "requiredLevel": 15
+        }
+      ],
+      "color": "#6FC3FF"
+    },
+    {
+      "key": "pixie",
+      "origin": "medievalorigins:pixie",
+      "name": "Pixie",
+      "description": "§l§Tổng Quan§r: \n§o§2+ Bay Lượn, Ranh Mãnh§r\n§o§6• Nhỏ Bé: 54cm§r\n§o§c- Mỏng Manh, Khó Chịu Với Sắt§r\n§lPixie§r là những yêu tinh tí hon tinh nghịch của thế giới thần tiên, đôi cánh rực rỡ vỗ nhẹ, thích phá phách và luôn gặp may mắn.",
+      "powers": [
+        {
+          "name": "Đôi Cánh Pixie",
+          "description": "Pixie sở hữu đôi cánh nhỏ nhẹ, có thể bay lượn trên không một cách dễ dàng.",
+          "active": true,
+          "requiredLevel": 3
+        },
+        {
+          "name": "Thân Hình Tí Hon",
+          "description": "Pixie vô cùng nhỏ bé, lọt vừa những khe hở nhỏ và rất nhanh nhẹn.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Chân Lông Vũ",
+          "description": "Bước chân của pixie nhẹ như lông vũ, không gây tiếng động và giảm sát thương rơi.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Lây Nhiễm May Mắn",
+          "description": "Pixie mang lại may mắn: nhặt thêm đồ tốt hơn từ săn bắn và chiến đấu.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Trò Tinh Nghịch",
+          "description": "Pixie thích gây náo loạn, kích hoạt để tạo ra những vụ nổ pháo hoa nghịch ngợm quanh kẻ thù.",
+          "active": true,
+          "requiredLevel": 5
+        },
+        {
+          "name": "Kén Ăn",
+          "description": "Dạ dày nhỏ nhưng hiệu quả, pixie được lợi thêm dinh dưỡng từ thức ăn.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Ức Chế Ma Thuật",
+          "description": "Sắt và bạc ức chế sức mạnh của pixie. Thật không thể chịu đựng được đối với chúng khi mặc chúng.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Tồn Tại Mỏng Manh",
+          "description": "Pixie là những sinh vật mỏng manh với ít máu hơn con người.",
+          "active": false,
+          "requiredLevel": 0
+        }
+      ],
+      "color": "#FF8AD8"
+    },
+    {
+      "key": "human",
+      "origin": "origins:human",
+      "name": "Con Người",
+      "description": "-§l Tổng Quan§r: \n§oKhông có§r\n\n Số phận của con người rộng mở hơn hầu hết - hãy dấn thân mà không có lợi thế hay bất lợi nào.",
+      "powers": [],
+      "color": "#FFFFFF"
+    },
+    {
+      "key": "undead",
+      "origin": "medievalorigins:revenant",
+      "name": "Revenant",
+      "description": "-§l Tổng Quan§r: \n§o§2+ Triệu Hồi§r\n§o§2+ Thân Thiện Với Illager\n§o§6• Xác Sống, Phức Tạp§r\n§o§c- Danh Tiếng\n- Tương tác với sinh vật sống§r\n§lRevenant§r là những linh hồn bất hạnh đã chết một cách thảm khốc và đau đớn, nhưng không thể giải thích được đã trở lại cuộc sống. Kết quả là, chúng trở nên ám ảnh với việc thao túng sự sống và cái chết ở những sinh vật khác.",
+      "powers": [
+        {
+          "name": "Revenance",
+          "description": "Revenant có thể tái tạo các sinh vật của bóng đêm được biến đổi để làm theo mệnh lệnh của riêng chúng. Chúng hoạt động như thú cưng, sẽ theo dõi và dịch chuyển, và có thể được trang bị vũ khí hoặc áo giáp. Zombie không thể sử dụng cung. Di chuột qua các huy hiệu để biết chi tiết.",
+          "active": true,
+          "requiredLevel": 10
+        },
+        {
+          "name": "Chỉ Huy Xác Sống",
+          "description": "Chỉ huy xác chết chiến đấu đã triệu hồi của bạn (không phải ngựa) để theo dõi, ngồi hoặc dịch chuyển đến bạn.",
+          "active": true,
+          "requiredLevel": 15
+        },
+        {
+          "name": "Hiệp Thông Thối Rữa",
+          "description": "Thông qua hành động đáng lo ngại là tiêu thụ thịt hoặc xương của xác sống, một revenant có thể tăng cường lần triệu hồi tiếp theo cùng loại.\nĐối với sinh vật chiến đấu, kéo dài thời gian của chúng, làm cho chúng vĩnh viễn ở sức mạnh tối đa. Đối với ngựa xác sống, tăng cường thuộc tính của chúng ở sức mạnh tối đa.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Lá Chắn Tử Thần",
+          "description": "Theo ý muốn, một revenant có thể dựng lên một vòng tròn các bộ xương bất động, đóng vai trò như một lá chắn tạm thời để bảo vệ chúng khỏi nguy hiểm và gây sát thương cho kẻ thù gần đó.",
+          "active": true,
+          "requiredLevel": 20
+        },
+        {
+          "name": "Rút Tinh Chất",
+          "description": "Khi bị đánh, revenant từ từ tích lũy sức mạnh cho phép chúng hút sinh lực từ kẻ thù. Điều này ảnh hưởng đến tất cả sinh vật, tốt hoặc xấu, ngoại trừ xác chết được triệu hồi.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Lời Nguyền Hoại Tử",
+          "description": "Revenant miễn nhiễm với khô héo, và giống như xác sống, chúng chịu thêm sát thương từ smite, nhận hiệu ứng đảo ngược từ các hiệu ứng gây hại và chữa lành, và miễn nhiễm với độc và hiệu ứng tái tạo.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Đồng Minh Hỗn Loạn",
+          "description": "Dân làng sẽ từ chối giao dịch với revenant và golem sắt sẽ tấn công chúng ngay khi nhìn thấy. Tuy nhiên, chúng được dung thứ (mong manh) bởi Pillager.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Ngón Tay Đen",
+          "description": "Một Revenant không thể thu hoạch bất kỳ cây trồng nào; chúng héo úa dưới cái chạm chết chóc của hắn.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Bị Quấy Nhiễu",
+          "description": "Thí nghiệm với những điều cấm kỵ làm vặn vẹo tâm trí. Revenant không thể ngủ, quá sợ hãi để mơ về những gì chúng ước gì chúng không biết.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Không Phòng Bị",
+          "description": "Ám ảnh về cõi linh hồn khiến revenant dễ bị tấn công hơn ở cõi vật chất. Hầu hết sinh vật gây nhiều sát thương hơn cho chúng.",
+          "active": false,
+          "requiredLevel": 0
+        }
+      ],
+      "color": "#66E066"
+    },
+    {
+      "key": "alfiq",
+      "origin": "medievalorigins:alfiq",
+      "name": "Alfiq",
+      "description": "-§l Tổng Quan§r: \n§o§2+ Nhanh Nhẹn, Rình Rập§r\n§o§6• Kích Thước: Mèo Lớn§r\n§o§c- Mỏng Manh Hơn Người§r\n§lAlfiq§r là giống mèo thông minh của vùng sa mạc, bốn chân rất nhanh nhẹn, quen với việc lén lút và săn mồi ban đêm.",
+      "powers": [
+        {
+          "name": "Móng Vuốt Sắc",
+          "description": "Vũ khí tự nhiên của alfiq rất sắc bén và luôn sẵn sàng.",
+          "active": false,
+          "requiredLevel": 3
+        },
+        {
+          "name": "Nhanh Nhẹn",
+          "description": "Alfiq di chuyển, nhảy và leo trèo nhanh nhẹn hơn người thường.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Mắt Mèo",
+          "description": "Nhìn rõ trong bóng tối nhờ đôi mắt mèo nhạy cảm.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Bốn Chân",
+          "description": "Luôn chạy bằng bốn chân ổn định nhưng khó dùng một số vật phẩm hơn.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Meow",
+          "description": "Kêu meo meo để gây chú ý với mọi người xung quanh.",
+          "active": true,
+          "requiredLevel": 3
+        }
+      ],
+      "color": "#FF9A3C"
+    },
+    {
+      "key": "goblin",
+      "origin": "medievalorigins:goblin",
+      "name": "Goblin",
+      "description": "-§l Tổng Quan§r: \n§o§2+ Xảo Quyệt, Thủ Công§r\n§o§6• Nhỏ Bé, Lanh Lợi§r\n§o§c- Yếu Ớt Dưới Ánh Sáng§r\n§lGoblin§r là những kẻ tinh ranh sống trong hang tối, chế tạo thủ công và bẫy rập tuyệt vời nhưng sợ ánh sáng mặt trời.",
+      "powers": [
+        {
+          "name": "Ngón Tay Khéo Léo",
+          "description": "Goblin chế tạo và sử dụng đồ thủ công nhanh, rẻ và hiệu quả hơn.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Sinh Vật Hang Tối",
+          "description": "Nhìn rõ trong bóng tối nhưng bị yếu thế dưới ánh nắng trực tiếp.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Kẻ Cắp Vặt",
+          "description": "Goblin nhỏ bé, khéo tay và luôn tìm được đồ bỏ đi hữu ích.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Vóc Dáng Nhỏ",
+          "description": "Nhỏ con hơn người, lọt vào những nơi chật hẹp.",
+          "active": false,
+          "requiredLevel": 0
+        }
+      ],
+      "color": "#7EB14E"
+    },
+    {
+      "key": "incubus",
+      "origin": "medievalorigins:incubus",
+      "name": "Incubus",
+      "description": "-§l Tổng Quan§r: \n§o§2+ Hút Sinh Khí, Quyến Rũ§r\n§o§6• Ác Mộng Sống§r\n§o§c- Đau Với Lửa, Khổ Với Ngày§r\n§lIncubus§r là ác mộng thành người, hút sinh lực của kẻ khác để sống, quyến rũ nhưng yếu với ánh nắng và lửa.",
+      "powers": [
+        {
+          "name": "Hút Sinh Khí",
+          "description": "Hút sức sống từ sinh vật khác để hồi máu cho bản thân.",
+          "active": true,
+          "requiredLevel": 10
+        },
+        {
+          "name": "Đôi Cánh Bóng Đêm",
+          "description": "Giữ thăng bằng tốt và có vẻ ngoài đáng sợ trong bóng tối.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Sợ Ánh Sáng",
+          "description": "Ánh nắng và lửa làm incubus yếu đi rõ rệt.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Lửa Quỷ",
+          "description": "Phóng lửa quỷ dữ thiêu đốt kẻ địch trước mặt.",
+          "active": true,
+          "requiredLevel": 10
+        }
+      ],
+      "color": "#D06BFF"
+    },
+    {
+      "key": "valkyrie",
+      "origin": "medievalorigins:valkyrie",
+      "name": "Valkyrie",
+      "description": "-§l Tổng Quan§r: \n§o§2+ Chiến Binh Thiên Giới§r\n§o§6• Đôi Cánh Thần Thánh§r\n§o§c- Không Mặc Áo Giáp Nặng§r\n§lValkyrie§r là chiến binh của thiên giới, đôi cánh sải rộng lao thẳng vào chiến trường, nhưng chỉ mặc được áo giáp nhẹ.",
+      "powers": [
+        {
+          "name": "Đôi Cánh Valkyrie",
+          "description": "Tránh rơi chết và tăng tốc khi lao xuống nhờ đôi cánh.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Chiến Binh Nhẹ Nhàng",
+          "description": "Chỉ mặc được áo giáp nhẹ, nhưng vũ khí luôn sáng tạo và đáng gờm.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Khí Thế Tiên Giới",
+          "description": "Di chuyển trong chiến đấu nhanh và chính xác hơn người thường.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Can Thiệp",
+          "description": "Lao xuống can thiệp vào trận chiến, gây sát thương quanh vị trí đáp.",
+          "active": true,
+          "requiredLevel": 10
+        }
+      ],
+      "color": "#A5C8FF"
+    },
+    {
+      "key": "wood_elf",
+      "origin": "medievalorigins:wood_elf",
+      "name": "Tiên Gỗ",
+      "description": "-§l Tổng Quan§r: \n§o§2+ Rừng Sâu, Ẩn Thân§r\n§o§6• Cao Lớn, Dẻo Dai§r\n§o§c- Đói Ở Nơi Trống Trải§r\n§lTiên Gỗ§r sống hòa hợp với thiên nhiên, ẩn mình giữa cây cối, điều khiển thực vật và săn bắn thành thạo hơn ai hết.",
+      "powers": [
+        {
+          "name": "Bước Đi Rừng Rậm",
+          "description": "Đi xuyên qua cây cối và bụi rậm như đi trên đường bằng.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Tay Săn Giỏi",
+          "description": "Bắn cung và săn bắn hiệu quả, thu thập nhiều chiến lợi phẩm hơn.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Gắn Bó Thiên Nhiên",
+          "description": "Mạnh hơn trong rừng rậm, yếu đi ở nơi trống trải thiếu cây cối.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Thân Hình Cao",
+          "description": "Cao lớn hơn người thường một chút.",
+          "active": false,
+          "requiredLevel": 0
+        }
+      ],
+      "color": "#4CBF6B"
+    },
+    {
+      "key": "yeti",
+      "origin": "medievalorigins:yeti",
+      "name": "Yeti",
+      "description": "-§l Tổng Quan§r: \n§o§2+ Sức Mạnh, Chịu Lạnh§r\n§o§6• Vóc Dáng To Lớn§r\n§o§c- Nóng Bức, Chậm Chạp§r\n§lYeti§r là quái vật tuyết của núi cao, sức mạnh khủng khiếp và chịu lạnh tuyệt đối, nhưng không chịu được nơi nóng bức.",
+      "powers": [
+        {
+          "name": "Sức Mạnh Băng Giá",
+          "description": "Tay không cũng đánh rất mạnh, đủ sức đập vỡ mọi thứ.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Chịu Lạnh",
+          "description": "Miễn nhiễm hoàn toàn với giá lạnh và băng tuyết.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Vóc Dáng To Lớn",
+          "description": "To lớn, nặng ký, không vừa những lối đi nhỏ.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Không Chịu Nhiệt",
+          "description": "Nơi nóng, dung nham và lửa làm yeti kiệt sức nhanh chóng.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Mạch Băng",
+          "description": "Tạo ra xung lực băng giá làm chậm và đóng băng kẻ địch xung quanh.",
+          "active": true,
+          "requiredLevel": 10
+        }
+      ],
+      "color": "#CFE8FF"
+    },
+    {
+      "key": "fae",
+      "origin": "medievalorigins:fae",
+      "name": "Fae",
+      "description": "-§l Tổng Quan§r: \n§o§2+ Tiên, May Mắn, Phép Thuật§r\n§o§6• Cánh Tiên, Nhỏ Nhẹ§r\n§o§c- Mỏng Manh, Nhạy Sắt§r\n§lFae§r là những tiên lành của thế giới thần tiên, đôi cánh lấp lánh, gắn bó với thiên nhiên, có phép thuật dịu dàng nhưng rất quyền năng và may mắn.",
+      "powers": [
+        {
+          "name": "Cánh Tiên",
+          "description": "Đôi cánh mỏng nhẹ giúp fae tránh được tổn thương từ rơi và di chuyển linh hoạt hơn.",
+          "active": true,
+          "requiredLevel": 5
+        },
+        {
+          "name": "Phép Màu Thiên Nhiên",
+          "description": "Fae gắn bó với thiên nhiên, mạnh mẽ hơn khi ở gần cây cối và hoa lá.",
+          "active": true,
+          "requiredLevel": 10
+        },
+        {
+          "name": "May Mắn",
+          "description": "Fae luôn gặp may: thu hoạch nhiều hơn và ít gặp rủi ro hơn.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Dáng Hình Nhỏ",
+          "description": "Ngoại hình của fae nhỏ, xinh xắn nhưng dễ bị tổn thương hơn người thường.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Bồi Bổ",
+          "description": "Hấp thụ dưỡng chất thiên nhiên xung quanh để hồi phục.",
+          "active": true,
+          "requiredLevel": 5
+        }
+      ],
+      "color": "#FFD966"
+    },
+    {
+      "key": "dragonkin",
+      "origin": "medievalorigins:dragonkin",
+      "name": "Long Nhân",
+      "description": "-§l Tổng Quan§r: \n§o§2+ Sức Mạnh, Phòng Thủ, Bậc Thầy Vũ Khí§r\n§o§2• Chống Nóng/Lạnh: vảy rồng chịu nhiệt tốt§r\n§o§6• Đồ Sộ: cao ngang ogre§r\n§o§c- Chậm Chạp, Đói Nhanh, Không Mặc Được Giáp Dưới Sắt§r\n§lLong Nhân§r là tộc lai giữa người và rồng, vảy rồng che chở, sức mạnh và thể chất vượt trội. Cao ngang ogre nên không thể đi qua những lối đi chỉ cao 2 khối.",
+      "powers": [
+        {
+          "name": "Thân Hình Rồng",
+          "description": "Máu rất cao, sức mạnh thể chất lớn (+50% sát thương) nhưng cơ thể nặng nề: đi chậm (-30%) và đánh chậm hơn người.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Vảy Rồng",
+          "description": "Lớp vảy rồng kiên cố giúp tăng giáp và kháng cự.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Chống Nóng/Lạnh",
+          "description": "Vảy rồng đã quen với khí hậu khắc nghiệt: chịu nóng và lạnh tốt hơn người thường (giảm ảnh hưởng nhiệt độ môi trường).",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Móng Vuốt Rồng",
+          "description": "Móng vuốt cứng như sắt: đánh tay không gây thêm +4 sát thương.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Nhanh Đói",
+          "description": "Cơ thể rồng đốt cháy năng lượng cực nhanh, đói nhanh hơn người thường (60%).",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Nộ Rồng",
+          "description": "Kỹ năng chủ động: khi máu dưới 50%, bấm phím để bùng nộ, tăng Sức Mạnh trong 15 giây.",
+          "active": true,
+          "requiredLevel": 10
+        },
+        {
+          "name": "Bậc Thầy Vũ Khí",
+          "description": "Sát thương tăng theo loại vũ khí: kiếm +35%, rìu/búa +25%, cuốc/xẻng +20%, đinh ba +20%.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Tay Đập Đá",
+          "description": "Đôi tay cứng cáp có thể đập vỡ đá thông thường mà không cần cuốc chì.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Khinh Trang Bị",
+          "description": "Không thể mặc giáp dưới cấp sắt (da, vàng, xích, mai rùa).",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Vóc Dáng Đồ Sộ",
+          "description": "Cao tương đương ogre (~3 khối), to lớn nên không thể đi qua lối đi cao 2 khối.",
+          "active": false,
+          "requiredLevel": 0
+        }
+      ],
+      "color": "#FF6B4C"
+    },
+    {
+      "key": "ogre",
+      "origin": "medievalorigins:ogre",
+      "name": "Ogre",
+      "description": "-§l Tổng Quan§r: \n§o§2+ Sức Mạnh, Rìu Chiến, Bụng Chì§r\n§o§6• Đồ Sộ: cao ~3 khối§r\n§o§c- Chậm Chạp, Đói Nhanh, Không Dùng Khiên§r\n§lOgre§r là gã khổng lồ ăn tạp của núi rừng, sức mạnh phi thường với cây rìu và cái bụng chì miễn nhiễm mọi thứ. Khát máu bùng nổ khi chiến đấu, nhưng cơ thể dềnh dàng và không thể nấp sau khiên.",
+      "powers": [
+        {
+          "name": "Thân Hình Khổng Lồ",
+          "description": "Ogre to lớn hơn hầu hết chủng tộc (~3 khối), y như long nhân: không lọt được lối đi cao 2 khối.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Khát Máu",
+          "description": "Kích hoạt để bùng nổ cơn khát máu: chạy nhanh, đào đá điên cuồng, nhưng tự làm chính mình bị thương và phải khỏe hơn 6 trái tim mới dùng được.",
+          "active": true,
+          "requiredLevel": 10
+        },
+        {
+          "name": "Bậc Thầy Rìu",
+          "description": "Rìu trong tay ogre gây thêm +25% sát thương.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Bụng Chì",
+          "description": "Cái bụng ogre chịu được mọi thứ: miễn nhiễm độc và đói.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Cơ Bắp Cuồn Cuộn",
+          "description": "Cơ thể ogre đặc chắc: thêm +10 máu tối đa, đập đá nhanh hơn và sát thương tay không +35%.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Ăn Như Ngựa",
+          "description": "Cơ thể khổng lồ đốt năng lượng khủng khiếp: đói nhanh hơn người thường (80%).",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Chậm Chạp",
+          "description": "Thân hình nặng nề: đi chậm và đánh chậm hơn người thường.",
+          "active": false,
+          "requiredLevel": 0
+        },
+        {
+          "name": "Đồ Sộ",
+          "description": "To lớn, nặng nề, không vừa những lối đi nhỏ.",
+          "active": false,
+          "requiredLevel": 0
+        }
+      ],
+      "color": "#8B7355"
+    }
+  ]
+}

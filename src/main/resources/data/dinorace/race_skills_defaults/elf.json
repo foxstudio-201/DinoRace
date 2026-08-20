@@ -1,0 +1,52 @@
+{
+  "raceName": "Elf",
+  "stats": [
+    { "name": "Sinh Lực", "value": 0.55 },
+    { "name": "Tốc Độ", "value": 0.90 },
+    { "name": "Ma Thuật", "value": 0.85 },
+    { "name": "Cận Chiến", "value": 0.40 },
+    { "name": "Phòng Thủ", "value": 0.45 },
+    { "name": "Phản Xạ", "value": 0.80 },
+    { "name": "Khai Thác", "value": 0.35 }
+  ],
+  "skills": [
+    { "name": "Ngắm Chuẩn", "level": 3, "description": "Đôi mắt tinh anh giúp tay cung bắn trúng cao hơn, ít lệch khi trời mưa." },
+    { "name": "Bước Chân Nhẹ", "level": 2, "description": "Di chuyển không tạo tiếng động, giảm sát thương rơi từ độ cao lớn." },
+    { "name": "Khiêu Vũ Cung Tên", "level": 1, "description": "Rút tên nhanh hơn khi đứng yên, tốc độ nạp tên của cung tăng nhẹ." },
+    { "name": "Cảm Nhận Rừng", "level": 2, "description": "Trong rừng, phát hiện sinh vật gần đó và hồi phục nhanh hơn." },
+    { "name": "Mũi Tên Băng Giá", "level": 1, "description": "Tên bắn ra kèm theo hơi lạnh, làm chậm kẻ địch một chút." },
+    { "name": "Hòa Hợp Ma Thuật", "level": 3, "description": "Lượng mana tăng thêm và tốc độ hồi mana nhanh hơn các tộc khác." }
+  ],
+  "evolution": {
+    "progress": 30,
+    "milestones": [0, 25, 50, 75, 100],
+    "nodes": [
+      { "id": "root", "name": "Khởi Nguyên Yêu Tinh", "icon": "icon_elf", "x": 0.50, "y": 0.04, "desc": "Điểm bắt đầu mọi huyết mạch của Yêu Tinh Cao Cấp. Kế thừa đôi tai thính và xương cốt thanh mảnh." },
+      { "id": "gentle", "name": "Bước Chân Nhẹ", "icon": "icon_elf", "x": 0.30, "y": 0.20, "desc": "Yêu tinh bước đi không một tiếng động giữa lá khô, phản xạ nhanh hơn." },
+      { "id": "keen", "name": "Đôi Tai Thính", "icon": "icon_elf", "x": 0.70, "y": 0.20, "desc": "Tai dài lọc được mọi âm thanh, cảnh báo kẻ thù từ rất xa." },
+      { "id": "archer", "name": "Cung Thủ Bẩm Sinh", "icon": "icon_elf", "x": 0.16, "y": 0.36, "desc": "Mở khóa phong cách Cung Thủ: tăng sát thương cung và tốc độ nạp tên." },
+      { "id": "nature", "name": "Hòa Hợp Thiên Nhiên", "icon": "icon_elf", "x": 0.50, "y": 0.38, "desc": "Cây cối và sinh vật thiên nhiên trở nên thân thiện, hồi phục nhanh trong rừng." },
+      { "id": "arcane", "name": "Ma Thuật Cổ", "icon": "icon_elf", "x": 0.84, "y": 0.36, "desc": "Tiếp cận dòng chảy nguyên tố, tăng sát thương phép và dung lượng mana." },
+      { "id": "frost", "name": "Mũi Tên Băng", "icon": "icon_elf", "x": 0.28, "y": 0.55, "desc": "Tên bắn ra đông cứng không khí, làm chậm kẻ địch trúng đòn." },
+      { "id": "storm", "name": "Bão Gió", "icon": "icon_elf", "x": 0.72, "y": 0.55, "desc": "Điều khiển luồng gió, đẩy lui kẻ địch và tăng tốc độ di chuyển khi bay." },
+      { "id": "blood", "name": "Tinh Linh Huyết Mạch", "icon": "icon_elf", "x": 0.50, "y": 0.74, "desc": "Huyết mạch tinh linh thức tỉnh, hợp nhất sức mạnh cung và ma thuật." },
+      { "id": "final", "name": "Thánh Yêu Tinh", "icon": "icon_elf", "x": 0.50, "y": 0.92, "desc": "Hình thái tối thượng của Yêu Tinh Cao Cấp — ánh sáng khu rừng cổ xưa soi sáng mọi ngóc ngách." }
+    ],
+    "links": [
+      ["root", "gentle"],
+      ["root", "keen"],
+      ["gentle", "archer"],
+      ["keen", "archer"],
+      ["gentle", "nature"],
+      ["keen", "nature"],
+      ["keen", "arcane"],
+      ["archer", "frost"],
+      ["nature", "frost"],
+      ["nature", "storm"],
+      ["arcane", "storm"],
+      ["frost", "blood"],
+      ["storm", "blood"],
+      ["blood", "final"]
+    ]
+  }
+}

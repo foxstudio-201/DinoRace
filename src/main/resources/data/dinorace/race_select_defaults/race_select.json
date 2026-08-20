@@ -1,0 +1,18 @@
+{
+  "enabled": [
+    "dwarf",
+    "elf",
+    "pixie",
+    "human",
+    "undead",
+    "alfiq",
+    "goblin",
+    "incubus",
+    "valkyrie",
+    "wood_elf",
+    "yeti",
+    "fae",
+    "dragonkin",
+    "ogre"
+  ]
+}

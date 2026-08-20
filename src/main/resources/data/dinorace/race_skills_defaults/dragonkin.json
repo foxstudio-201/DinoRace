@@ -1,0 +1,94 @@
+{
+ "raceName": "Long Nhân",
+ "stats": [
+  {
+   "name": "Máu Tối Đa +8",
+   "value": 0.4
+  },
+  {
+   "name": "Sát Thương Vật Lý +50%",
+   "value": 0.5
+  },
+  {
+   "name": "Sát Thương Tay Không +4",
+   "value": 0.4
+  },
+  {
+   "name": "Giáp +4",
+   "value": 0.5
+  },
+  {
+   "name": "Độ Cứng Giáp +2",
+   "value": 0.5
+  },
+  {
+   "name": "Tốc Độ Di Chuyển -30%",
+   "value": 0.3
+  },
+  {
+   "name": "Tốc Độ Đánh -5%",
+   "value": 0.25
+  },
+  {
+   "name": "Đói Nhanh +60%",
+   "value": 0.6
+  }
+ ],
+ "skills": [
+  {
+   "name": "Nộ Rồng",
+   "level": 1,
+   "description": "Kỹ năng chủ động: khi máu dưới 50%, bấm phím để bùng nộ, tăng Sức Mạnh trong 15 giây.",
+   "active": true,
+   "requiredLevel": 10
+  },
+  {
+   "name": "Móng Vuốt Rồng",
+   "level": 1,
+   "description": "Móng vuốt cứng như sắt: đánh tay không gây thêm +4 sát thương.",
+   "active": false
+  },
+  {
+   "name": "Nhanh Đói",
+   "level": 1,
+   "description": "Cơ thể rồng đốt cháy năng lượng cực nhanh, đói nhanh hơn người thường (60%).",
+   "active": false
+  },
+  {
+   "name": "Tay Đập Đá",
+   "level": 1,
+   "description": "Đôi tay cứng cáp đập vỡ được đá thông thường mà không cần cuốc, và vẫn nhặt được khoáng sản.",
+   "active": false
+  },
+  {
+   "name": "Bậc Thầy Vũ Khí",
+   "level": 1,
+   "description": "Sát thương tăng theo loại vũ khí: kiếm +35%, rìu/búa +25%, cuốc/xẻng +20%, đinh ba +20%.",
+   "active": false
+  },
+  {
+   "name": "Khinh Trang Bị",
+   "level": 1,
+   "description": "Vảy rồng không chấp nhận giáp dưới cấp sắt (da, vàng, xích, mai rùa) — chỉ mặc được từ sắt trở lên.",
+   "active": false
+  },
+  {
+   "name": "Vảy Rồng",
+   "level": 1,
+   "description": "Lớp vảy rồng đã quen với khí hậu khắc nghiệt: chịu nóng và lạnh tốt hơn người thường.",
+   "active": false
+  },
+  {
+   "name": "Vóc Dáng Đồ Sộ",
+   "level": 1,
+   "description": "Cao tương đương ogre (~3 khối), to lớn nên không thể đi qua các lối đi chỉ cao 2 khối.",
+   "active": false
+  }
+ ],
+ "evolution": {
+  "progress": 0,
+  "milestones": [],
+  "nodes": [],
+  "links": []
+ }
+}
