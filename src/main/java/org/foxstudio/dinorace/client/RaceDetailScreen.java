@@ -372,7 +372,7 @@ public class RaceDetailScreen extends Screen {
             if (y + boxH > top && y < bottom) {
                 nineSlice(g, CLASS, cx, y, cw, boxH, 6, 30);
                 int nameColor = locked ? 0xFF999999 : (sk.active ? 0xFFFFCC66 : 0xFF3B3B3B);
-                g.drawString(this.font, sk.name, cx + 12, y + 10, nameColor, false);
+                g.drawString(this.font, sk.name, cx + (sk.active ? 26 : 12), y + 10, nameColor, false);
                 if (sk.active) {
                     if (locked) {
                         String req = "Cần cấp " + sk.requiredLevel;
@@ -402,16 +402,15 @@ public class RaceDetailScreen extends Screen {
         if (hovered >= 0) {
             RaceDetailConfig.Skill sk = skills.get(hovered);
             boolean locked = sk.active && playerLevel < sk.requiredLevel;
-            List<String> descLines = wrapText(sk.description, 220);
-            int tw = this.font.width(sk.name);
-            for (String ln : descLines) {
-                tw = Math.max(tw, this.font.width(ln));
+            String status;
+            if (sk.active) {
+                status = locked ? "Chưa đủ cấp độ — cần cấp " + sk.requiredLevel : "Đã mở khóa";
+            } else {
+                status = "Kỹ năng thụ động";
             }
-            String reqLine = locked ? "KHÓA — cần cấp " + sk.requiredLevel : "Đã mở khóa";
-            tw = Math.max(tw, this.font.width(reqLine));
             int iconSize = 14;
-            tw = Math.max(tw, iconSize + 6);
-            int th = 6 + 10 + descLines.size() * 10 + (locked ? 12 : 0) + 6;
+            int tw = iconSize + 4 + Math.max(this.font.width(sk.name), this.font.width(status));
+            int th = 6 + 10 + 10 + 6;
             int tX = mouseX + 14;
             int tY = mouseY + 10;
             if (tX + tw > cx + cw + 2) {
@@ -426,21 +425,13 @@ public class RaceDetailScreen extends Screen {
             if (tY < top + 6) {
                 tY = top + 6;
             }
-            int bg = 0xF0100010;
             g.fill(tX - 3, tY - 3, tX + tw + 3, tY + th + 3, 0x505000FF);
             g.fill(tX - 3, tY + 3, tX + tw + 3, tY + th - 3, 0x5028007F);
-            g.fill(tX - 1, tY - 1, tX + tw + 1, tY + th + 1, bg);
+            g.fill(tX - 1, tY - 1, tX + tw + 1, tY + th + 1, 0xF0100010);
             g.blit(locked ? LOCK_ICON : UNLOCK_ICON, tX + 3, tY + 4, iconSize, iconSize, 0f, 0f, 1, 1, 1, 1);
             int tx = tX + 3 + iconSize + 4;
             g.drawString(this.font, sk.name, tx, tY + 4, locked ? 0xFFFF5555 : 0xFFFFCC44, true);
-            int tyy = tY + 15;
-            for (String ln : descLines) {
-                g.drawString(this.font, ln, tx, tyy, 0xFFDDDDDD, false);
-                tyy += 10;
-            }
-            if (locked) {
-                g.drawString(this.font, reqLine, tx, tyy + 2, 0xFFFF6666, true);
-            }
+            g.drawString(this.font, status, tx, tY + 16, locked ? 0xFFFF6666 : 0xFF88CCFF, false);
         }
     }
 
