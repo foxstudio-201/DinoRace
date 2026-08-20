@@ -27,7 +27,7 @@ public final class SkillGateEnforcer {
 
     private static final org.slf4j.Logger LOGGER = org.slf4j.LoggerFactory.getLogger("dinorace");
 
-    private static final Map<String, Integer> REQUIRED = new HashMap<>();
+    public static final Map<String, Integer> REQUIRED = new HashMap<>();
 
     static {
         REQUIRED.put("medievalorigins:dwarf/potent_brew", 5);

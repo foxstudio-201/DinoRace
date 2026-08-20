@@ -129,6 +129,9 @@ public final class OriginsReader {
                     sk.name = name;
                     sk.description = compText(invoke(pt, "getDescription"));
                     sk.level = 1;
+                    Integer req = org.foxstudio.dinorace.SkillGateEnforcer.REQUIRED.get(ptId(pt));
+                    sk.active = req != null;
+                    sk.requiredLevel = req == null ? 0 : req;
                     list.add(sk);
                 } catch (Throwable t) {
                     LOGGER.debug("Bỏ qua power: {}", t.getMessage());
